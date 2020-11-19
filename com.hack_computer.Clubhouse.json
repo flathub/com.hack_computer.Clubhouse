@@ -8,6 +8,7 @@
             "autodelete": true
         }
     },
+
     "runtime": "org.gnome.Platform",
     "runtime-version": "3.36",
     "sdk": "org.gnome.Sdk",
@@ -32,7 +33,6 @@
         "--socket=fallback-x11",
         "--system-talk-name=org.freedesktop.Accounts",
         "--system-talk-name=org.freedesktop.hostname1",
-        "--system-talk-name=com.endlessm.Metrics",
         "--talk-name=org.freedesktop.Flatpak",
         "--talk-name=org.freedesktop.DBus",
         "--talk-name=org.gtk.Notifications",
@@ -109,59 +109,6 @@
             ]
         },
         {
-            "name": "dbus-python",
-            "buildsystem": "simple",
-            "ensure-writable": [
-                "easy-install.pth"
-            ],
-            "build-commands": [
-                "pip3 install --no-index --find-links=\"file://${PWD}\" --prefix=${FLATPAK_DEST} dbus-python"
-            ],
-            "sources": [
-                {
-                    "type": "file",
-                    "url": "https://files.pythonhosted.org/packages/b6/85/7b46d31f15a970665533ad5956adee013f03f0ad4421c3c83304ae9c9906/dbus-python-1.2.12.tar.gz",
-                    "sha256": "cdd4de2c4f5e58f287b12013ed7b41dee81d503c8d0d2397c5bd2fb01badf260"
-                }
-            ]
-        },
-        {
-            "name": "python-dbusmock",
-            "buildsystem": "simple",
-            "ensure-writable": [
-                "easy-install.pth"
-            ],
-            "build-commands": [
-                "pip3 install --no-index --find-links=\"file://${PWD}\" --prefix=${FLATPAK_DEST} python-dbusmock"
-            ],
-            "sources": [
-                {
-                    "type": "file",
-                    "url": "https://files.pythonhosted.org/packages/d3/61/dcc36e58577446c70ffa1cdca4c93dae5fd651c840eaf5717d98a4560aa7/python-dbusmock-0.18.3.tar.gz",
-                    "sha256": "994a178268b6d74aeb158c0f155cd141e9a0cfae14226a764cd022c4949fe242"
-                }
-            ]
-        },
-        {
-            "name": "eos-metrics",
-            "config-opts": [
-                "--enable-gir-doc=no"
-            ],
-            "build-options": {
-                "env": {
-                    "PYTHONPATH": "/app/lib/python3.7/site-packages/"
-                }
-            },
-            "sources": [
-                {
-                    "type": "git",
-                    "url": "https://github.com/endlessm/eos-metrics.git",
-                    "tag": "Release_3.8.6",
-                    "commit": "6b78996c7aa86892227c2ab6cbb8c173f469e4ec"
-                }
-            ]
-        },
-        {
             "name": "fonts",
             "buildsystem": "simple",
             "build-commands": [
@@ -202,7 +149,7 @@
                     "type": "git",
                     "url": "https://github.com/endlessm/hack-toolbox-app.git",
                     "branch": "eos3",
-                    "commit": "48c31d5536b0f5e4d316560a042100976493108c"
+                    "commit": "d3c6155d52040f85a51a214ed1337dc8f7af0999"
                 }
             ]
         },
@@ -236,10 +183,30 @@
             ]
         },
         {
+            "name": "persist-queue",
+            "buildsystem": "simple",
+            "sources": [
+                {
+                    "type": "git",
+                    "url": "https://github.com/peter-wangxu/persist-queue.git",
+                    "tag": "v0.5.0",
+                    "commit": "f27b0ca8b52454a79de8cf4e1f7abceed6307def"
+                }
+            ],
+            "build-commands": [
+                "python3 ./setup.py install --prefix=/app"
+            ]
+        },
+        {
             "name": "clubhouse",
             "buildsystem": "meson",
+            "build-options": {
+                "build-args": []
+            },
             "config-opts" : [
                 "-Dsession-bus-services-dir=/app/share/dbus-1/services",
+                "-Dmatomo-host=http://matomo.test.endlessos.org",
+                "-Dmatomo-site=1",
                 "-Drun-lint=false"
             ],
             "run-tests": true,
@@ -250,7 +217,7 @@
                     "type": "git",
                     "url": "https://github.com/endlessm/clubhouse.git",
                     "branch": "eos3",
-                    "commit": "77b733dbf2cd45eea036c93bcdf3b06b635b6148"
+                    "commit": "b47b2e9fb742a6c2b7cc96df8e12562263ba24d0"
                 }
             ]
         }
