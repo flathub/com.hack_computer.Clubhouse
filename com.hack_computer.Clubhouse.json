@@ -8,7 +8,6 @@
             "autodelete": true
         }
     },
-
     "runtime": "org.gnome.Platform",
     "runtime-version": "3.36",
     "sdk": "org.gnome.Sdk",
@@ -221,7 +220,7 @@
                     "type": "git",
                     "url": "https://github.com/endlessm/clubhouse.git",
                     "branch": "eos3",
-                    "commit": "674e1627fa55616651507deaf1fc2718171e4a96"
+                    "commit": "b7b2b6ad47cfc94b844ed8d447a378da22d2f36c"
                 }
             ]
         }
