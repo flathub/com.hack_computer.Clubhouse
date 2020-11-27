@@ -209,7 +209,7 @@
             "config-opts" : [
                 "-Dsession-bus-services-dir=/app/share/dbus-1/services",
                 "-Dmatomo-host=http://matomo.test.endlessos.org",
-                "-Dmatomo-site=2",
+                "-Dmatomo-site=1",
                 "-Drun-lint=false"
             ],
             "run-tests": true,
