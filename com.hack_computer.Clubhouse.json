@@ -154,7 +154,7 @@
                     "type": "git",
                     "url": "https://github.com/endlessm/hack-toolbox-app.git",
                     "branch": "fix-extensions",
-                    "commit": "61725540985e0bc8c8fd72621bd06c7d5a5cee61"
+                    "commit": "143ccbdf709b4507de1b03950c24c625adaccdb6"
                 }
             ]
         },
