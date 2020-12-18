@@ -8,6 +8,7 @@
             "autodelete": true
         }
     },
+
     "runtime": "org.gnome.Platform",
     "runtime-version": "3.36",
     "sdk": "org.gnome.Sdk",
@@ -21,6 +22,7 @@
         "--filesystem=/var/lib/AccountsService/icons/:ro",
         "--filesystem=/var/lib/flatpak/exports/:ro",
         "--filesystem=/var/lib/flatpak/app/:ro",
+        "--filesystem=~/.local/share/flatpak/overrides/:rw",
         "--filesystem=~/.local/share/flatpak/exports/:ro",
         "--filesystem=~/.local/share/flatpak/app/:ro",
         "--filesystem=host",
@@ -152,7 +154,7 @@
                     "type": "git",
                     "url": "https://github.com/endlessm/hack-toolbox-app.git",
                     "branch": "eos3",
-                    "commit": "d3c6155d52040f85a51a214ed1337dc8f7af0999"
+                    "commit": "a6d55cc67100c83512ff724aa0d73a24cff61cfb"
                 }
             ]
         },
@@ -208,11 +210,12 @@
             },
             "config-opts" : [
                 "-Dsession-bus-services-dir=/app/share/dbus-1/services",
-                "-Dmatomo-host=http://matomo.test.endlessos.org",
-                "-Dmatomo-site=2",
+                "-Dmatomo-host=https://endlessos.matomo.cloud",
+                "-Dmatomo-site-id=1",
+                "-Dmatomo-base-url=https://www.endlessos.org",
                 "-Drun-lint=false"
             ],
-            "run-tests": true,
+            "run-tests": false,
             "test-rule": "",
             "test-commands": ["meson test --timeout-multiplier=10 --print-errorlogs"],
             "sources": [
@@ -220,7 +223,7 @@
                     "type": "git",
                     "url": "https://github.com/endlessm/clubhouse.git",
                     "branch": "eos3",
-                    "commit": "b7b2b6ad47cfc94b844ed8d447a378da22d2f36c"
+                    "commit": "ae30d261b0487dab7dd06d0b9e7f9c51c4e42969"
                 }
             ]
         }
