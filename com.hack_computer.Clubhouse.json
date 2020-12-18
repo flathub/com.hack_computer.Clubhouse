@@ -108,8 +108,8 @@
                 {
                     "type": "git",
                     "url": "https://github.com/endlessm/hack-sound-server.git",
-                    "branch": "master",
-                    "commit": "ab6f2ef4520bd5008f3ae2527dd41e956104d26a"
+                    "branch": "eos3",
+                    "commit": "1d4ea04c5db71915d88c72090e27524af68baee3"
                 }
             ]
         },
@@ -153,8 +153,8 @@
                 {
                     "type": "git",
                     "url": "https://github.com/endlessm/hack-toolbox-app.git",
-                    "branch": "fix-extensions",
-                    "commit": "143ccbdf709b4507de1b03950c24c625adaccdb6"
+                    "branch": "master",
+                    "commit": "79045d8fa16c5f71e8ddc34c1b2317d634dc860f"
                 }
             ]
         },
@@ -168,7 +168,7 @@
                 {
                     "type": "git",
                     "url": "https://github.com/endlessm/hack-game-state-service.git",
-                    "branch": "master",
+                    "branch": "eos3",
                     "commit": "f3a292de46fca85a02a300f3cbd4a7fbfc4d06f6"
                 }
             ]
@@ -222,8 +222,8 @@
                 {
                     "type": "git",
                     "url": "https://github.com/endlessm/clubhouse.git",
-                    "branch": "xmas-quest",
-                    "commit": "1303153da04add97bc9fabf9ae6d5598213947f9"
+                    "branch": "xmas-release-notes",
+                    "commit": "a6c16ba5bb098a287b76a41be69a1ea40c5c100d"
                 }
             ]
         }
