@@ -8,13 +8,10 @@
             "autodelete": true
         }
     },
-
     "runtime": "org.gnome.Platform",
     "runtime-version": "41",
     "sdk": "org.gnome.Sdk",
-
     "command": "eos-clubhouse",
-
     "finish-args": [
         "--env=GNOTIFICATION_BACKEND=gtk",
         "--env=GSETTINGS_SCHEMA_DIR=/run/host/usr/share/glib-2.0/schemas/",
@@ -53,7 +50,6 @@
         "--env=DCONF_USER_CONFIG_DIR=.config/dconf",
         "--require-version=1.8.2"
     ],
-
     "modules": [
         {
             "name": "clippy-ext",
@@ -108,7 +104,7 @@
         {
             "name": "hack-sound-server",
             "buildsystem": "meson",
-            "config-opts" : [
+            "config-opts": [
                 "-Dsession-bus-services-dir=/app/share/dbus-1/services"
             ],
             "sources": [
@@ -168,7 +164,7 @@
         {
             "name": "game-state-service",
             "buildsystem": "meson",
-            "config-opts" : [
+            "config-opts": [
                 "-Dsession-bus-services-dir=/app/share/dbus-1/services"
             ],
             "sources": [
@@ -215,7 +211,7 @@
             "build-options": {
                 "build-args": []
             },
-            "config-opts" : [
+            "config-opts": [
                 "-Dsession-bus-services-dir=/app/share/dbus-1/services",
                 "-Dmatomo-host=https://endlessos.matomo.cloud",
                 "-Dmatomo-site-id=2",
@@ -224,7 +220,9 @@
             ],
             "run-tests": false,
             "test-rule": "",
-            "test-commands": ["meson test --timeout-multiplier=10 --print-errorlogs"],
+            "test-commands": [
+                "meson test --timeout-multiplier=10 --print-errorlogs"
+            ],
             "sources": [
                 {
                     "type": "git",
