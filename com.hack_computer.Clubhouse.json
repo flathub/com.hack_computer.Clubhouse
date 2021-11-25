@@ -227,8 +227,8 @@
                 {
                     "type": "git",
                     "url": "https://github.com/endlessm/clubhouse.git",
-                    "branch": "gnome-41",
-                    "commit": "833e2f112952ba979008f627ab4bfd359d0f8cf2"
+                    "branch": "eos3",
+                    "commit": "96e1e4410807d8921421dd99c3a64e11f0157bfa"
                 }
             ]
         }
