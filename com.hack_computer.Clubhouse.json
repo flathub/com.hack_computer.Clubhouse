@@ -111,8 +111,8 @@
                 {
                     "type": "git",
                     "url": "https://github.com/endlessm/hack-sound-server.git",
-                    "branch": "eos3",
-                    "commit": "1d4ea04c5db71915d88c72090e27524af68baee3"
+                    "branch": "eos5",
+                    "commit": "ab6f2ef4520bd5008f3ae2527dd41e956104d26a"
                 }
             ]
         },
@@ -156,8 +156,8 @@
                 {
                     "type": "git",
                     "url": "https://github.com/endlessm/hack-toolbox-app.git",
-                    "branch": "eos3",
-                    "commit": "a6d55cc67100c83512ff724aa0d73a24cff61cfb"
+                    "branch": "eos5",
+                    "commit": "79045d8fa16c5f71e8ddc34c1b2317d634dc860f"
                 }
             ]
         },
@@ -171,7 +171,7 @@
                 {
                     "type": "git",
                     "url": "https://github.com/endlessm/hack-game-state-service.git",
-                    "branch": "eos3",
+                    "branch": "eos5",
                     "commit": "f3a292de46fca85a02a300f3cbd4a7fbfc4d06f6"
                 }
             ]
@@ -227,8 +227,8 @@
                 {
                     "type": "git",
                     "url": "https://github.com/endlessm/clubhouse.git",
-                    "branch": "eos3",
-                    "commit": "96e1e4410807d8921421dd99c3a64e11f0157bfa"
+                    "branch": "eos5",
+                    "commit": "986fe0e907b350539400fba1ed771accba5bd8b0"
                 }
             ]
         }
