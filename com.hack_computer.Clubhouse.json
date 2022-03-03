@@ -72,8 +72,8 @@
                 {
                     "type": "git",
                     "url": "https://codeberg.org/soundtouch/soundtouch.git",
-                    "tag": "2.3.1",
-                    "commit": "e1f315f5358d9db5cee35a7a2886425489fcefe8"
+                    "tag": "2.1.2",
+                    "commit": "9205fc971ed23cff407a67242bb9036a51113af4"
                 }
             ]
         },
