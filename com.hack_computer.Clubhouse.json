@@ -10,7 +10,7 @@
     },
 
     "runtime": "org.gnome.Platform",
-    "runtime-version": "41",
+    "runtime-version": "42",
     "sdk": "org.gnome.Sdk",
     "command": "eos-clubhouse",
     "finish-args": [
@@ -112,7 +112,6 @@
                 {
                     "type": "git",
                     "url": "https://github.com/endlessm/hack-sound-server.git",
-                    "branch": "eos5",
                     "commit": "ab6f2ef4520bd5008f3ae2527dd41e956104d26a"
                 }
             ]
@@ -157,7 +156,6 @@
                 {
                     "type": "git",
                     "url": "https://github.com/endlessm/hack-toolbox-app.git",
-                    "branch": "eos5",
                     "commit": "651ec78f2d907bef37c2e04f67ccebd7afc073da"
                 }
             ]
@@ -172,7 +170,6 @@
                 {
                     "type": "git",
                     "url": "https://github.com/endlessm/hack-game-state-service.git",
-                    "branch": "eos5",
                     "commit": "f3a292de46fca85a02a300f3cbd4a7fbfc4d06f6"
                 }
             ]
@@ -209,9 +206,6 @@
         {
             "name": "clubhouse",
             "buildsystem": "meson",
-            "build-options": {
-                "build-args": []
-            },
             "config-opts": [
                 "-Dsession-bus-services-dir=/app/share/dbus-1/services",
                 "-Dmatomo-host=https://endlessos.matomo.cloud",
@@ -228,7 +222,6 @@
                 {
                     "type": "git",
                     "url": "https://github.com/endlessm/clubhouse.git",
-                    "branch": "eos5",
                     "commit": "986fe0e907b350539400fba1ed771accba5bd8b0"
                 }
             ]
