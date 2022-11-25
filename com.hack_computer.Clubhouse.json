@@ -10,7 +10,7 @@
     },
 
     "runtime": "org.gnome.Platform",
-    "runtime-version": "41",
+    "runtime-version": "43",
     "sdk": "org.gnome.Sdk",
     "command": "eos-clubhouse",
     "finish-args": [
