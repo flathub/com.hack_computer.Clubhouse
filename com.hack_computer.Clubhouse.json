@@ -2,14 +2,15 @@
     "app-id": "com.hack_computer.Clubhouse",
     "add-extensions": {
         "com.hack_computer.Clippy.Extension": {
-            "version": "beta",
+            "version": "stable",
             "directory": "clippy",
             "no-autodownload": false,
             "autodelete": true
         }
     },
+
     "runtime": "org.gnome.Platform",
-    "runtime-version": "41",
+    "runtime-version": "43",
     "sdk": "org.gnome.Sdk",
     "command": "eos-clubhouse",
     "finish-args": [
@@ -214,14 +215,9 @@
             "config-opts": [
                 "-Dsession-bus-services-dir=/app/share/dbus-1/services",
                 "-Dmatomo-host=https://endlessos.matomo.cloud",
-                "-Dmatomo-site-id=2",
+                "-Dmatomo-site-id=1",
                 "-Dmatomo-base-url=https://www.endlessos.org",
                 "-Drun-lint=false"
-            ],
-            "run-tests": false,
-            "test-rule": "",
-            "test-commands": [
-                "meson test --timeout-multiplier=10 --print-errorlogs"
             ],
             "sources": [
                 {
