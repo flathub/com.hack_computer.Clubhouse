@@ -188,7 +188,7 @@
                 }
             ],
             "build-commands": [
-                "python3 ./setup.py install --prefix=/app"
+                "python3 ./setup.py install --single-version-externally-managed --root / --prefix=/app"
             ]
         },
         {
@@ -203,7 +203,7 @@
                 }
             ],
             "build-commands": [
-                "python3 ./setup.py install --prefix=/app"
+                "python3 ./setup.py install --single-version-externally-managed --root / --prefix=/app"
             ]
         },
         {
