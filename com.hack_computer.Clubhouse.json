@@ -2,14 +2,15 @@
     "app-id": "com.hack_computer.Clubhouse",
     "add-extensions": {
         "com.hack_computer.Clippy.Extension": {
-            "version": "beta",
+            "version": "stable",
             "directory": "clippy",
             "no-autodownload": false,
             "autodelete": true
         }
     },
+
     "runtime": "org.gnome.Platform",
-    "runtime-version": "41",
+    "runtime-version": "42",
     "sdk": "org.gnome.Sdk",
     "command": "eos-clubhouse",
     "finish-args": [
@@ -90,8 +91,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://gstreamer.freedesktop.org/src/gst-plugins-bad/gst-plugins-bad-1.18.5.tar.xz",
-                    "sha256": "a164923b94f0d08578a6fcaeaac6e0c05da788a46903a1086870e9ca45ad678e",
+                    "url": "https://gstreamer.freedesktop.org/src/gst-plugins-bad/gst-plugins-bad-1.18.6.tar.xz",
+                    "sha256": "0b1b50ac6311f0c510248b6cd64d6d3c94369344828baa602db85ded5bc70ec9",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 21849,
@@ -214,21 +215,16 @@
             "config-opts": [
                 "-Dsession-bus-services-dir=/app/share/dbus-1/services",
                 "-Dmatomo-host=https://endlessos.matomo.cloud",
-                "-Dmatomo-site-id=2",
+                "-Dmatomo-site-id=1",
                 "-Dmatomo-base-url=https://www.endlessos.org",
                 "-Drun-lint=false"
-            ],
-            "run-tests": false,
-            "test-rule": "",
-            "test-commands": [
-                "meson test --timeout-multiplier=10 --print-errorlogs"
             ],
             "sources": [
                 {
                     "type": "git",
                     "url": "https://github.com/endlessm/clubhouse.git",
                     "branch": "eos5",
-                    "commit": "986fe0e907b350539400fba1ed771accba5bd8b0"
+                    "commit": "22861758f52fca777ee35689fc3b6650dc144ca2"
                 }
             ]
         }
