@@ -8,7 +8,6 @@
             "autodelete": true
         }
     },
-
     "runtime": "org.gnome.Platform",
     "runtime-version": "42",
     "sdk": "org.gnome.Sdk",
@@ -91,8 +90,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://gstreamer.freedesktop.org/src/gst-plugins-bad/gst-plugins-bad-1.18.6.tar.xz",
-                    "sha256": "0b1b50ac6311f0c510248b6cd64d6d3c94369344828baa602db85ded5bc70ec9",
+                    "url": "https://gstreamer.freedesktop.org/src/gst-plugins-bad/gst-plugins-bad-1.23.1.tar.xz",
+                    "sha256": "c6fd7d2744dbda549ee93bbc5d21a42a91df019c905a67a55bd1be77d3a422de",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 21849,
